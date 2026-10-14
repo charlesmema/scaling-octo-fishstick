@@ -34,20 +34,6 @@ After the install, you can switch the "unknown apps" permission off again for yo
 
 Download the newest `SocimAI.apk` and install it over the old app. Your saved data stays. The app does not update itself and does not tell you when a new version exists, so look at the [Releases](https://github.com/charlesmema/scaling-octo-fishstick/releases) page now and then.
 
-## Check the file (optional)
-
-Every release shows the SHA-256 checksum of its file. To check your copy:
-
-- Windows (PowerShell): `Get-FileHash .\SocimAI.apk -Algorithm SHA256`
-- macOS or Linux: `shasum -a 256 SocimAI.apk`
-
-The two numbers must be the same. Every version is also signed with the same key. The SHA-256 fingerprint of the signing certificate is:
-
-```
-32:1C:5E:64:F2:6E:84:42:F3:01:52:A9:36:89:BA:25:17:67:26:87:47:77:87:28:1F:28:71:A0:69:EB:ED:27
-```
-
-With the Android SDK build-tools you can read it from the file: `apksigner verify --print-certs SocimAI.apk`. If the fingerprint is different, do not install the file.
 
 ## What the app does
 
