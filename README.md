@@ -7,7 +7,7 @@ SoCim is a community reporting app for **Barangay 73, Zone 7, District II, Caloo
 
 ## Download
 
-- **Newest version: [SocimAI.apk](https://github.com/charlesmema/scaling-octo-fishstick/releases/latest/download/SocimAI.apk)** (about 16.5 MB)
+- **Newest version: [SocimAI.apk](https://github.com/charlesmema/scaling-octo-fishstick/releases/latest/download/SocimAI.apk)** (about 26 MB)
 - All versions and their notes: [Releases](https://github.com/charlesmema/scaling-octo-fishstick/releases)
 - You can also scan the QR code on the Download page of the SoCim website.
 
@@ -34,11 +34,11 @@ After the install, you can switch the "unknown apps" permission off again for yo
 
 Download the newest `SocimAI.apk` and install it over the old app. Your saved data stays. The app does not update itself and does not tell you when a new version exists, so look at the [Releases](https://github.com/charlesmema/scaling-octo-fishstick/releases) page now and then.
 
-
 ## What the app does
 
 - **Report a problem.** Choose the problem from a list, put a pin on the map, add 1 to 5 photos, write what happened, and send. The report waits on your phone if there is no internet.
 - **My reports.** See each report with its status and the message that the barangay staff send you. Search your reports.
+- **Rate a resolved report.** When the barangay marks your report as resolved, the app asks you to give 1 to 5 stars and an optional comment. After you send it, a short survey (a Google Form) opens in your browser. You do not have to answer the survey.
 - **Create an account or sign in.** You sign in with your **mobile number** and a **password that you choose**. A new account is checked by the barangay. The barangay can ask you to show proof of residence at the hall.
 - **Emergency numbers.** A list of emergency contacts with Call and Copy buttons. Your phone makes the call.
 - **News and events.** Posts and events of the barangay.
@@ -63,6 +63,7 @@ The full text is in the app: **Create account**, then **Terms of use**. In short
 - **Report:** the problem, your text, the address you type or the pin, your photos, the time, the position of the problem, and a snapshot of your own position when you send. The title and the text of the report go to an AI service that suggests a category and a priority. Your name, address and position are not sent to it. Do not write phone numbers or the names of other people in a report.
 - Barangay staff can see reports and account details. The app keeps you signed in on your phone until you sign out.
 - The app does not collect audio, video, your contacts, or your position all the time.
+- **Map pictures** come from OpenFreeMap (OpenStreetMap data). The map server can see the network address of your phone and the area of the map that you look at. It does not receive your report.
 - To ask about your data, or to ask for it to be deleted, go to the barangay hall or ask the project team.
 
 This text describes the trial. It is not a legal-compliance review.
@@ -70,7 +71,7 @@ This text describes the trial. It is not a legal-compliance review.
 ## Limits of this trial
 
 - Android only.
-- The map needs Google Play services. On a phone without them, the app shows your position as text and the report can still be sent.
+- The map pictures need internet. Without internet the map is empty, but your pin and your report still work. The map does not need Google Play services.
 - The app has no in-app update and no push messages. It checks the status of your reports while the screen is open.
 - Other phone makers change the install screens. Your steps can look a little different.
 
@@ -80,8 +81,7 @@ If you have a problem with your registration or your account, **go to the Barang
 
 ## For the project team: how a release is made in this repository
 
-- Make a release with a tag such as `v1.1`, and attach the file with the exact name **`SocimAI.apk`**. The download link above and the SoCim website use that name and the address `releases/latest/download/SocimAI.apk`. A different file name breaks the link.
-- Put the SHA-256 checksum of the file in the release notes.
+- Make a release with a tag such as `1.2` (the same style as `1.0` and `1.1`), and attach the file with the exact name **`SocimAI.apk`**. The download link above and the SoCim website use that name and the address `releases/latest/download/SocimAI.apk`. A different file name breaks the link.
 - Raise the version code for every release. Android refuses an update with a lower version code.
 - Do not attach a build that holds a secret key.
 
